@@ -243,3 +243,5 @@ D:\Github\SPMI CHD\obj\Debug\90\stamp\_ConvertResourcesCases.stamp
 D:\Github\SPMI CHD\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\Github\SPMI CHD\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Github\SPMI CHD\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Github\SPMI CHD\obj\Debug\90\android\src\crc64d386613f30d6bac0\MainActivity_WebViewClientClass.java
+D:\Github\SPMI CHD\obj\Debug\90\android\src\crc64d386613f30d6bac0\WebViewClientClass.java

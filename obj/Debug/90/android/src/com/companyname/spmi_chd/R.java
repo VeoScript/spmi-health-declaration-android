@@ -4756,8 +4756,9 @@ public final class R {
     public static final int useLogo=0x7f0800b9;
     public static final int view_offset_helper=0x7f0800ba;
     public static final int visible=0x7f0800bb;
-    public static final int withText=0x7f0800bc;
-    public static final int wrap_content=0x7f0800bd;
+    public static final int webView1=0x7f0800bc;
+    public static final int withText=0x7f0800bd;
+    public static final int wrap_content=0x7f0800be;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
