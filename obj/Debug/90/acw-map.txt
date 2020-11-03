@@ -1,6 +1,9 @@
 SPMI_CHD.MainActivity, SPMI CHD;crc64d386613f30d6bac0.MainActivity
 SPMI_CHD.MainActivity;crc64d386613f30d6bac0.MainActivity
 spmi_chd.MainActivity;crc64d386613f30d6bac0.MainActivity
+SPMI_CHD.WebApplicationView, SPMI CHD;crc64d386613f30d6bac0.WebApplicationView
+SPMI_CHD.WebApplicationView;crc64d386613f30d6bac0.WebApplicationView
+spmi_chd.WebApplicationView;crc64d386613f30d6bac0.WebApplicationView
 SPMI_CHD.WebViewClientClass, SPMI CHD;crc64d386613f30d6bac0.WebViewClientClass
 SPMI_CHD.WebViewClientClass;crc64d386613f30d6bac0.WebViewClientClass
 spmi_chd.WebViewClientClass;crc64d386613f30d6bac0.WebViewClientClass

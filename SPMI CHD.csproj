@@ -68,8 +68,27 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApplicationView.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Poppins-Bold.ttf" />
+    <AndroidAsset Include="Assets\Poppins-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-ExtraBold.ttf" />
+    <AndroidAsset Include="Assets\Poppins-ExtraBoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-ExtraLight.ttf" />
+    <AndroidAsset Include="Assets\Poppins-ExtraLightItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Italic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Light.ttf" />
+    <AndroidAsset Include="Assets\Poppins-LightItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Medium.ttf" />
+    <AndroidAsset Include="Assets\Poppins-MediumItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Regular.ttf" />
+    <AndroidAsset Include="Assets\Poppins-SemiBold.ttf" />
+    <AndroidAsset Include="Assets\Poppins-SemiBoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Thin.ttf" />
+    <AndroidAsset Include="Assets\Poppins-ThinItalic.ttf" />
+    <AndroidAsset Include="Assets\Poppins-Black.ttf" />
+    <AndroidAsset Include="Assets\Poppins-BlackItalic.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
@@ -100,7 +119,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\web_application_view.xml" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
@@ -109,6 +130,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\spmi_ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\spmi_official.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rounded_border.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

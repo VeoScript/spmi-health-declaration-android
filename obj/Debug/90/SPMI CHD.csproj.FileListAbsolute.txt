@@ -245,3 +245,7 @@ D:\Github\SPMI CHD\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Github\SPMI CHD\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 D:\Github\SPMI CHD\obj\Debug\90\android\src\crc64d386613f30d6bac0\WebViewClientClass.java
 D:\Github\SPMI CHD\obj\Debug\90\res\drawable\spmi_ico.ico
+D:\Github\SPMI CHD\obj\Debug\90\res\layout\web_application_view.xml
+D:\Github\SPMI CHD\obj\Debug\90\android\src\crc64d386613f30d6bac0\WebApplicationView.java
+D:\Github\SPMI CHD\obj\Debug\90\res\drawable\spmi_official.png
+D:\Github\SPMI CHD\obj\Debug\90\res\drawable\rounded_border.xml
