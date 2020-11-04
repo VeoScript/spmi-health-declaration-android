@@ -20,6 +20,7 @@ namespace SPMI_CHD
     public class WebApplicationView : Activity
     {
         WebView webView1;
+        ImageView imageView1;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,6 +33,7 @@ namespace SPMI_CHD
 
             //akong gitawag ang id gikan sa xml
             webView1 = FindViewById<WebView>(Resource.Id.webView1);
+            imageView1 = FindViewById<ImageView>(Resource.Id.imageView1);
             //loadingBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
 
             //akong gitawag ang internal class na WebViewClientClass
@@ -55,12 +57,17 @@ namespace SPMI_CHD
             public WebViewClientClass(Activity mActivity)
             {
                 this.mActivity = mActivity;
+                //imageView1 = FindViewsWith<ImageView>(Resource.Id.loadbarimage);
             }
             ProgressDialog loadingBar;
             public override bool ShouldOverrideUrlLoading(WebView view, string url)
             {
                 view.LoadUrl(url);
-                loadingBar = ProgressDialog.Show(mActivity, "Loading...", "Please Wait (About 4 seconds)", true);
+                return true;
+            }
+            public override void OnPageStarted(WebView view, string url, Android.Graphics.Bitmap favicon)
+            {
+                loadingBar = ProgressDialog.Show(mActivity, "Loading...", "Please wait it depends on your internet connection...", true);
                 if (loadingBar != null)
                 {
                     if (loadingBar.IsShowing == false)
@@ -68,13 +75,8 @@ namespace SPMI_CHD
                 }
                 else
                 {
-                    Toast.MakeText(mActivity, "Loading...", ToastLength.Long).Show();
+                    Toast.MakeText(mActivity, "Processing...", ToastLength.Long).Show();
                 }
-                return true;
-            }
-            public override void OnPageStarted(WebView view, string url, Android.Graphics.Bitmap favicon)
-            {
-                Toast.MakeText(mActivity, "Waiting for Login...", ToastLength.Long).Show();
                 base.OnPageStarted(view, url, favicon);
             }
             public override void OnPageFinished(WebView view, string url)

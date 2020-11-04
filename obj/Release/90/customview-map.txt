@@ -1,0 +1,29 @@
+adaptive-icon;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher.xml
+adaptive-icon;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+android.webkit.WebView;obj\Release\90\res\layout\web_application_view.xml
+background;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher.xml
+background;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+Button;obj\Release\90\res\layout\activity_main.xml
+cache-path;D:\Github\SPMI CHD\obj\Release\90\lp\35\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Release\90\res\values\colors.xml
+color;obj\Release\90\res\values\ic_launcher_background.xml
+corners;obj\Release\90\res\drawable\rounded_border.xml
+external-cache-path;D:\Github\SPMI CHD\obj\Release\90\lp\35\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;D:\Github\SPMI CHD\obj\Release\90\lp\35\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher.xml
+foreground;obj\Release\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
+ImageView;obj\Release\90\res\layout\activity_main.xml
+item;obj\Release\90\res\values\styles.xml
+LinearLayout;obj\Release\90\res\layout\activity_main.xml
+LinearLayout;obj\Release\90\res\layout\web_application_view.xml
+paths;D:\Github\SPMI CHD\obj\Release\90\lp\35\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;obj\Release\90\res\layout\activity_main.xml
+resources;obj\Release\90\res\values\colors.xml
+resources;obj\Release\90\res\values\ic_launcher_background.xml
+resources;obj\Release\90\res\values\strings.xml
+resources;obj\Release\90\res\values\styles.xml
+shape;obj\Release\90\res\drawable\rounded_border.xml
+solid;obj\Release\90\res\drawable\rounded_border.xml
+string;obj\Release\90\res\values\strings.xml
+style;obj\Release\90\res\values\styles.xml
+TextView;obj\Release\90\res\layout\activity_main.xml
