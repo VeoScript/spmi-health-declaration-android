@@ -162,3 +162,4 @@ D:\Github\SPMI CHD\obj\Release\90\stamp\_ConvertResourcesCases.stamp
 D:\Github\SPMI CHD\obj\Release\90\stamp\_GenerateJavaStubs.stamp
 D:\Github\SPMI CHD\obj\Release\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Github\SPMI CHD\obj\Release\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Github\SPMI CHD\obj\Release\90\SPMI CHD.csprojAssemblyReference.cache
