@@ -26990,8 +26990,8 @@
 	.section	.rodata.java_type_name.4498,"aMS",%progbits,1
 	.type	.L.java_type_name.4498, %object
 .L.java_type_name.4498:
-	.asciz	"crc64d386613f30d6bac0/WebViewClientClass"
-	.size	.L.java_type_name.4498, 41
+	.asciz	"crc64d386613f30d6bac0/WebApplicationView_WebViewClientClass"
+	.size	.L.java_type_name.4498, 60
 
 	.section	.rodata.java_type_name.4499,"aMS",%progbits,1
 	.type	.L.java_type_name.4499, %object
@@ -75722,12 +75722,12 @@
 	.section	.rodata.managed_type_name.6873,"aMS",%progbits,1
 	.type	.L.managed_type_name.6873, %object
 .L.managed_type_name.6873:
-	.asciz	"SPMI_CHD.WebApplicationView, SPMI CHD"
-	.size	.L.managed_type_name.6873, 38
+	.asciz	"SPMI_CHD.WebApplicationView+WebViewClientClass, SPMI CHD"
+	.size	.L.managed_type_name.6873, 57
 	.section	.rodata.managed_type_name.6874,"aMS",%progbits,1
 	.type	.L.managed_type_name.6874, %object
 .L.managed_type_name.6874:
-	.asciz	"SPMI_CHD.WebViewClientClass, SPMI CHD"
+	.asciz	"SPMI_CHD.WebApplicationView, SPMI CHD"
 	.size	.L.managed_type_name.6874, 38
 	.section	.rodata.managed_type_name.6875,"aMS",%progbits,1
 	.type	.L.managed_type_name.6875, %object
