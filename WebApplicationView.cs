@@ -5,8 +5,11 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Transitions;
+using Android.Transitions;
 using Android.Views;
 using Android.Webkit;
 using Android.Widget;
@@ -27,11 +30,12 @@ namespace SPMI_CHD
             //akong gideclare ang url sa official website
             string sourceURL = "https://spmi-health-declaration.vercel.app/login";
 
-            //akong gitawag ang id sa webview gikan sa xml
+            //akong gitawag ang id gikan sa xml
             webView1 = FindViewById<WebView>(Resource.Id.webView1);
+            //loadingBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
 
             //akong gitawag ang internal class na WebViewClientClass
-            webView1.SetWebViewClient(new WebViewClientClass());
+            webView1.SetWebViewClient(new WebViewClientClass(this));
             //gipasa dire ang url string na ako gideclara
             webView1.LoadUrl(sourceURL);
 
@@ -45,13 +49,51 @@ namespace SPMI_CHD
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-    }
-    internal class WebViewClientClass : WebViewClient
-    {
-        public override bool ShouldOverrideUrlLoading(WebView view, string url)
+        internal class WebViewClientClass : WebViewClient
         {
-            view.LoadUrl(url);
-            return true;
+            public Activity mActivity;
+            public WebViewClientClass(Activity mActivity)
+            {
+                this.mActivity = mActivity;
+            }
+            ProgressDialog loadingBar;
+            public override bool ShouldOverrideUrlLoading(WebView view, string url)
+            {
+                view.LoadUrl(url);
+                loadingBar = ProgressDialog.Show(mActivity, "Loading...", "Please Wait (About 4 seconds)", true);
+                if (loadingBar != null)
+                {
+                    if (loadingBar.IsShowing == false)
+                        Toast.MakeText(mActivity, "Loading...", ToastLength.Long).Show();
+                }
+                else
+                {
+                    Toast.MakeText(mActivity, "Loading...", ToastLength.Long).Show();
+                }
+                return true;
+            }
+            public override void OnPageStarted(WebView view, string url, Android.Graphics.Bitmap favicon)
+            {
+                Toast.MakeText(mActivity, "Waiting for Login...", ToastLength.Long).Show();
+                base.OnPageStarted(view, url, favicon);
+            }
+            public override void OnPageFinished(WebView view, string url)
+            {
+                if (loadingBar != null)
+                    if (loadingBar.IsShowing)
+                        loadingBar.Dismiss();
+                base.OnPageFinished(view, url);
+            }
+        }
+        public override bool OnKeyDown(Android.Views.Keycode keyCode, Android.Views.KeyEvent e)
+        {
+            if (keyCode == Keycode.Back && webView1.CanGoBack())
+            {
+                webView1.GoBack();
+                return true;
+            }
+
+            return base.OnKeyDown(keyCode, e);
         }
     }
 }
